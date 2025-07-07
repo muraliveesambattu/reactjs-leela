@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // Literal Way of Creating Object 
+        // var person1 = {
+        //     fname: "Ram",
+        //     lname: "Krishna",
+        //     company: "IBM",
+        //     email: "ram@ibm.com",
+        //     city: "Bangalore",
+        //     state: "Karnataka",
+        //     zip: "560066"
+        // }
+        // var person2 = {
+        //     fname: "Sam",
+        //     lname: "Sundhar",
+        //     company: "IBM",
+        //     email: "sam@ibm.com",
+        //     city: "Bangalore",
+        //     state: "Karnataka",
+        //     zip: "560066"
+        // }
+        // var person3 = {
+        //     fname: "Kumar",
+        //     lname: "Reddy",
+        //     company: "IBM",
+        //     email: "kumar@ibm.com",
+        //     city: "Bangalore",
+        //     state: "Karnataka",
+        //     zip: "560066"
+        // }
+        // var person4 = {
+        //     fname: "Kiran",
+        //     lname: "KK",
+        //     company: "Wipro",
+        //     email: "kiran@ibm.com",
+        //     city: "Bangalore",
+        //     state: "Karnataka",
+        //     zip: "560066"
+        // }
+
+        // WHy do we need classes ?
+        // To Instanciate and Create An Object
+        // Creating an Object with Class 
+        // Classes are Similar To Brick Moulds
+        class CommonProperties {
+            constructor(city, state, zip) {
+                this.city = "Bangalore";
+                this.state = "Karnataka";
+                this.zip = "560066";
+            }
+        }
+        class Person extends CommonProperties {
+            constructor(fname, lname, company, email) {
+                super()
+                this.fname = fname;
+                this.lname = lname;
+                this.company = company;
+                this.email = email
+            }
+        }
+
+        var person1 = new Person("murali", "krishna", "VMR", "murali"); // This is One Instace . Because of this Instance you created a Object Called person1
+        var person2 = new Person("Ram", "K", "VMR", "ram@gmail.com");
+        var person3 = new Person("Ravi", "M", "VMR", "ravi@gmail.com");
+        var person4 = new Person("Sam", "S", "VMR", "sam@gmail.com");
+
+        console.log(person1)
+        console.log(person2)
+        console.log(person3)
+        console.log(person4)
+    </script>
+</body>
+
+</html>
