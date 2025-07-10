@@ -5,6 +5,7 @@ import './App.css'
 import MuraliClassComp from './Components/MuraliClassComp'
 import UserClassComp from './Components/UserClassComp'
 import StudentClassComp from './Components/StudentClassComp'
+import UsersTable from './Components/UsersTable'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -15,7 +16,8 @@ function App() {
     <hr />
     {/* <MuraliClassComp/> */}
     {/* <UserClassComp/> */}
-    <StudentClassComp/>
+    {/* <StudentClassComp/> */}
+    <UsersTable/>
   </>
   )
 }
