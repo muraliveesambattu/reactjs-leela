@@ -1,0 +1,40 @@
+{
+  "users": [
+    {
+      "fname": "Murali Krishna",
+      "lname": "V",
+      "email": "vmurali100@gmail.com",
+      "id": 1
+    },
+    {
+      "fname": "Leelavathi",
+      "lname": "KM",
+      "email": "leela@gmail.com",
+      "id": 2
+    },
+    {
+      "fname": "Leelavathi",
+      "lname": "KM",
+      "email": "vmurali100@gmail.com",
+      "id": 3
+    },
+    {
+      "fname": "SEKHAR-added",
+      "lname": "PARK",
+      "email": "vmurali100@gmail.com",
+      "id": 4
+    },
+    {
+      "fname": "SEKHAR",
+      "lname": "PARK",
+      "email": "ss@gmail.com",
+      "id": 5
+    },
+    {
+      "fname": "Murali",
+      "lname": "Veesambattu",
+      "email": "9663856625@ybl",
+      "id": 6
+    }
+  ]
+}
