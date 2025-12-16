@@ -5,6 +5,19 @@ import { createUserAction, deleteUserAction } from "../store/usersSlice";
 import UsersForm from "./UsersForm";
 
 const Users = () => {
+  const [userDetails, setUsersDetails] = useState({
+    name: "",
+    email: "",
+    age: "",
+    role: "",
+    city: "",
+  })
+
+  const handleChange = (e) => {
+    const newUser = { ...userDetails }
+    newUser[e.target.name] = e.target.value;
+    setUsersDetails({ user: newUser })
+  };
   const usersDetails = useSelector((state) => state.usersInfo.usersArray);
 
   const dispatch = useDispatch();
@@ -17,7 +30,7 @@ const Users = () => {
   return (
     <div>
       <h2>Welcome to Users !</h2>
-      <UsersForm addUser={addUser} />
+      <UsersForm addUser={addUser} userDetails={userDetails} handleChange={handleChange} />
       <UsersTable users={usersDetails} deleteUser={deleteUser} />
       {/* <table border={1} style={{width:'100%'}}>
         <thead>

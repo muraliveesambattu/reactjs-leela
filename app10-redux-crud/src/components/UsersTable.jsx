@@ -33,7 +33,7 @@ export default function UsersTable({ users,deleteUser }) {
               <td style={styles.td}>{user.age}</td>
               <td style={styles.td}>{user.city}</td>
               <td style={styles.td}>
-                <button>Edit User</button>
+                <button >Edit User</button>
               </td>
               <td style={styles.td}>
                 <button onClick={()=>{deleteUser(user)}}>Delete User</button>
