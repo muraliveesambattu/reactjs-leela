@@ -4,6 +4,7 @@ export function User(params) {
     const [userInfo, setUserInfo] = useState({ fname: "", lname: "", email: "" });
     const [allUsersInfo, setAllUsersInfo] = useState([])
     const [isEdit, setIsEdit] = useState(false)
+    
     useEffect(() => {
         getDataFromServer()
     }, [])
