@@ -1,40 +1,60 @@
 {
   "users": [
     {
-      "fname": "Murali Krishna",
+      "id": 1,
+      "fname": "Murali",
       "lname": "V",
+      "email": "murali.v@example.com",
+      "state": "TN",
+      "zip": "600001"
+    },
+    {
+      "id": 2,
+      "fname": "Ananya",
+      "lname": "Sharma",
+      "email": "ananya.sharma@example.com",
+      "state": "KA",
+      "zip": "560001"
+    },
+    {
+      "id": 3,
+      "fname": "Rahul",
+      "lname": "Mehta",
+      "email": "rahul.mehta@example.com",
+      "state": "MH",
+      "zip": "400001"
+    },
+    {
+      "id": 4,
+      "fname": "Priya",
+      "lname": "Nair",
+      "email": "priya.nair@example.com",
+      "state": "KL",
+      "zip": "682001"
+    },
+    {
+      "id": 5,
+      "fname": "Arjun",
+      "lname": "Singh",
+      "email": "arjun.singh@example.com",
+      "state": "DL",
+      "zip": "110001"
+    },
+    {
+      "id": "66",
+      "fname": "V",
+      "lname": "Murali",
       "email": "vmurali100@gmail.com",
-      "id": 1
+      "state": "Karnataka",
+      "zip": "560066"
     },
     {
-      "fname": "Leelavathi",
-      "lname": "KM",
-      "email": "leela@gmail.com",
-      "id": 2
-    },
-    {
-      "fname": "Leelavathi",
-      "lname": "KM",
-      "email": "vmurali100@gmail.com",
-      "id": 3
-    },
-    {
-      "fname": "SEKHAR-added",
-      "lname": "PARK",
-      "email": "vmurali100@gmail.com",
-      "id": 4
-    },
-    {
-      "fname": "SEKHAR",
-      "lname": "PARK",
-      "email": "ss@gmail.com",
-      "id": 5
-    },
-    {
+      "id": "12",
       "fname": "Murali",
       "lname": "Veesambattu",
       "email": "9663856625@ybl",
-      "id": 6
+      "state": "Karnataka",
+      "zip": "560066"
     }
   ]
 }
