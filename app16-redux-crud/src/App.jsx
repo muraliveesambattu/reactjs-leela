@@ -1,6 +1,6 @@
 import { useDispatch, useSelector } from 'react-redux';
 import { useEffect, useState } from 'react';
-import { createUsersAsyncAction, deleteUsersAsyncAction, getAllUsersAsyncAction } from './store/userSlice';
+import { createUsersAsyncAction, deleteUsersAsyncAction, getAllUsersAsyncAction, updateUsersAsyncAction } from './store/userSlice';
 
 function App() {
   // const {users} = useSelector((state)=>{
@@ -49,6 +49,12 @@ function App() {
     setUser(user);
     setIsEdit(true)
   }
+
+  const handleUpdate = () => {
+    dispatch(updateUsersAsyncAction(user));
+    clearForm()
+    setIsEdit(false)
+  }
   return (
     <>
       <h2>React Redux CRUD Demo</h2>
@@ -59,7 +65,7 @@ function App() {
         </li>)}
 
         <br />
-        <form onSubmit={handleSubmit}>
+        <form >
           <input
             type="number"
             name="id"
@@ -119,7 +125,7 @@ function App() {
             required
           />
           <br /><br />
-          {isEdit ? <button type="submit" style={{ background: 'green', color: "white" }}>Update</button> : <button type="submit" style={{ background: 'green', color: "white" }}>Submit</button>
+          {isEdit ? <button type="button" style={{ background: 'green', color: "white" }} onClick={handleUpdate}>Update</button> : <button type="button" onClick={handleSubmit} style={{ background: 'green', color: "white" }}>Submit</button>
 
           }
         </form>

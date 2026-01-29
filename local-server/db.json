@@ -2,9 +2,9 @@
   "users": [
     {
       "id": 1,
-      "fname": "Murali",
+      "fname": "Murali ",
       "lname": "V",
-      "email": "murali.v@example.com",
+      "email": "murali.vmrkm@example.com",
       "state": "TN",
       "zip": "600001"
     },
@@ -28,13 +28,13 @@
       "id": 4,
       "fname": "Priya",
       "lname": "Nair",
-      "email": "priya.nair@example.com",
+      "email": "priya.nairmk@example.com",
       "state": "KL",
       "zip": "682001"
     },
     {
       "id": 5,
-      "fname": "Arjun",
+      "fname": "Arjun ",
       "lname": "Singh",
       "email": "arjun.singh@example.com",
       "state": "DL",
@@ -50,9 +50,9 @@
     },
     {
       "id": "12",
-      "fname": "Murali",
+      "fname": "Murali VMR",
       "lname": "Veesambattu",
-      "email": "9663856625@ybl",
+      "email": "966385667222@ybl",
       "state": "Karnataka",
       "zip": "560066"
     }

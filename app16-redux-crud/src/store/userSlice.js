@@ -21,7 +21,16 @@ export const getAllUsersAsyncAction = createAsyncThunk('users/createUserAsync', 
     const response = await fetch(API_URL);
     return response.json()
 });
-export const updateUsersAsyncAction = createAsyncThunk('users/updateUserAsync', () => { });
+export const updateUsersAsyncAction = createAsyncThunk('users/updateUserAsync', async (user) => {
+    const response = await fetch(API_URL + user.id, {
+        method: "PUT",
+        body: JSON.stringify(user),
+        headers: {
+            "Content-Type": "application/json"
+        }
+    })
+    return response.json()
+});
 
 export const deleteUsersAsyncAction = createAsyncThunk('users/deleteUserAsync', async (user) => {
     const response = await fetch(API_URL + user.id, {
@@ -42,6 +51,13 @@ const usersSlice = createSlice({
         })
         builder.addCase(createUsersAsyncAction.fulfilled, (state, action) => {
             state.users.push(action.payload);
+        })
+        builder.addCase(updateUsersAsyncAction.fulfilled, (state, action) => {
+            const updatedUser = action.payload; // must contain id
+            const index = state.users.findIndex((u) => u.id === updatedUser.id);
+            if (index !== -1) {
+                state.users[index] = updatedUser;
+            }
         })
     }
 
